@@ -1,0 +1,37 @@
+{
+	"TypeScriptRequire": {
+		"prefix": "tsmap",
+		"body": [
+			"import EsriMap = require(\"esri/Map\");",
+			"import MapView = require(\"esri/views/MapView\");",
+			"const map = new EsriMap({",
+			"basemap:\"${1:streets}\"",
+			"});",
+			"const view = new MapView({",
+			"map:map,",
+			"container:\"viewDiv\",",
+			"center:[${2: -118.244,34.052}],",
+			"zoom:${3:12}",
+			"});"
+
+		],
+		"description": "Create Map TypeScript"
+	},
+	"TypeScriptWebMapRequire": {
+		"prefix": "tswebmap",
+		"body": [
+			"import WebMap = require(\"esri/WebMap\");",
+			"import MapView = require(\"esri/views/MapView\");",
+			"const map = new WebMap({",
+			"portalItem:{",
+			"id: \"${1:6a7794164bc3428692fa771cd04c0d4b}\"",
+			"}",
+			"});",
+			"const view = new MapView({",
+			"map:map,",
+			"container:\"${2:viewDiv}\"",
+			"});"
+		],
+		"description": "Create Web Map TypeScript"
+	}
+}
