@@ -1,5 +1,7 @@
 # Code Snippets 
-Code snippets I created for common bits of JS, TypeScript, HTML and Css I use when building apps with the ArcGIS API for JavaScript
+Code snippets I created for common bits of JS, TypeScript, HTML and Css I use when building apps with the ArcGIS API for JavaScript. 
+
+For more info on using Visual Studio Code Snippets check out the [VS Doc](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
 
 * json.json contains one snippet that creates a default tsconfig file. 
