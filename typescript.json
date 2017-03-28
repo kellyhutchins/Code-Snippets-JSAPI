@@ -17,6 +17,21 @@
 		],
 		"description": "Create Map TypeScript"
 	},
+	"TypeScriptSceneRequire": {
+		"prefix": "tsscene",
+		"body": [
+			"import EsriMap = require(\"esri/Map\");",
+			"import SceneView = require(\"esri/views/SceneView\");",
+			"const map = new EsriMap({",
+			"basemap:\"${1:streets}\"",
+			"});",
+			"const view = new SceneView({",
+			"map:map,",
+			"container:\"viewDiv\"",
+			"});"
+		],
+		"description": "Create Scene TypeScript"
+	},
 	"TypeScriptWebMapRequire": {
 		"prefix": "tswebmap",
 		"body": [
@@ -33,5 +48,22 @@
 			"});"
 		],
 		"description": "Create Web Map TypeScript"
+	},
+	"TypeScriptWebSceneRequire": {
+		"prefix": "tswebscene",
+		"body": [
+			"import WebScene = require(\"esri/WebScene\");",
+			"import SceneView = require(\"esri/views/SceneView\");",
+			"const map = new WebScene({",
+			"portalItem:{",
+			"id: \"${1:3a9976baef9240ab8645ee25c7e9c096}\"",
+			"}",
+			"});",
+			"const view = new SceneView({",
+			"map:map,",
+			"container:\"${2:viewDiv}\"",
+			"});"
+		],
+		"description": "Create Web Scene TypeScript"
 	}
 }
