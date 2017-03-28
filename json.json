@@ -1,0 +1,27 @@
+{
+	"TypeScript Config": {
+		"prefix": "tsconfig",
+		"body": [
+			"{",
+			"\"compilerOptions\":{",
+			"\"module\": \"amd\",",
+			"\"noImplicitAny\": true,",
+			"\"sourceMap\": true,",
+			"\"jsx\": \"react\",",
+			"\"reactNamespace\": \"jsxFactory\",",
+			"\"target\": \"es5\",",
+			"\"experimentalDecorators\": true,",
+			"\"preserveConstEnums\": true,",
+			"\"suppressImplicitAnyIndexErrors\": true",
+			"},",
+			"\"include\":[",
+			"\"./app/*\"",
+			"],",
+			"\"exclude\": [",
+			"\"node_modules\"",
+			"]",
+			"}"
+		],
+		"description": "Type Script Config Default"
+	}
+}
