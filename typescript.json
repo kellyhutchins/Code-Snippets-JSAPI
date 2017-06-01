@@ -2,9 +2,9 @@
 	"TypeScriptRequire": {
 		"prefix": "tsmap",
 		"body": [
-			"import EsriMap = require(\"esri/Map\");",
+			"import Map = require(\"esri/Map\");",
 			"import MapView = require(\"esri/views/MapView\");",
-			"const map = new EsriMap({",
+			"const map = new Map({",
 			"basemap:\"${1:streets}\"",
 			"});",
 			"const view = new MapView({",
@@ -20,9 +20,9 @@
 	"TypeScriptSceneRequire": {
 		"prefix": "tsscene",
 		"body": [
-			"import EsriMap = require(\"esri/Map\");",
+			"import Map = require(\"esri/Map\");",
 			"import SceneView = require(\"esri/views/SceneView\");",
-			"const map = new EsriMap({",
+			"const map = new Map({",
 			"basemap:\"${1:streets}\"",
 			"});",
 			"const view = new SceneView({",
