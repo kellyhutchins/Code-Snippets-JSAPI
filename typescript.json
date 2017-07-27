@@ -5,15 +5,14 @@
 			"import Map = require(\"esri/Map\");",
 			"import MapView = require(\"esri/views/MapView\");",
 			"const map = new Map({",
-			"basemap:\"${1:streets}\"",
+			"basemap:\"${1:streets}\" as string as any",
 			"});",
 			"const view = new MapView({",
 			"map:map,",
 			"container:\"viewDiv\",",
-			"center:[${2: -118.244,34.052}],",
+			"center:[${2: -118.244,34.052}] as any,",
 			"zoom:${3:12}",
 			"});"
-
 		],
 		"description": "Create Map TypeScript"
 	},
@@ -23,7 +22,7 @@
 			"import Map = require(\"esri/Map\");",
 			"import SceneView = require(\"esri/views/SceneView\");",
 			"const map = new Map({",
-			"basemap:\"${1:streets}\"",
+			"basemap:\"${1:streets}\" as string as any",
 			"});",
 			"const view = new SceneView({",
 			"map:map,",
